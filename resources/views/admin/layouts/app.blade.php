@@ -21,6 +21,7 @@
     {{-- includi footer --}}
     @include("admin.partials.footer")
 
+    @vite("resources/sass/app.scss")
     @vite("resources/js/app.js")
     @yield("additional-scripts")
 </body>
