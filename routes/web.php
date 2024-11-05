@@ -25,6 +25,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::prefix("/admin")->name("admin.")->group(function(){
     Route::get("/projects" , [ProjectController::class , "index"])->name("index");
+    Route::post("/projects/store" , [ProjectController::class , "store"])->name("store");
+    Route::get("/projects/create" , [ProjectController::class , "create"])->name("create");
     Route::get("/projects/show/{project}" , [ProjectController::class , "show"])->name("show");
 
 });

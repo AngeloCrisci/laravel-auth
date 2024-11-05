@@ -4,6 +4,11 @@
 
 @section("main-content")
 <div class="container">
+    <div class="row justify-content-center">
+        <a href="{{ route("admin.create") }}" class="btn btn-danger m-3 d-flex justify-content-center align-content-center col-3">
+            Crea un nuovo Progetto
+        </a>
+    </div>
     <div class="row mb-2">
     @forelse ($projects as $index => $project )
         <div style="width: 18rem;">

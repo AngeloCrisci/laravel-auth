@@ -23,5 +23,15 @@ class ProjectController extends Controller
         return view("admin.show" , compact("project"));
     }
 
+    public function store(Request $request){
+        $formData = $request->all();
+
+        $project = Project::create($formData);
+        return redirect()->route("admin.index");
+    }
+
+    public function create(){
+        return view("admin.create");
+    }
 
 }
