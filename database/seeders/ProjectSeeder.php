@@ -40,7 +40,8 @@ class ProjectSeeder extends Seeder
             $newProject->name = $project["name"];
             $newProject->date = $project["date"];
             $newProject->description = $project["description"];
-            $newProject->nlink = $project["link"];
+            $newProject->link = $project["link"];
+            $newProject->save();
         }
     }
 }
