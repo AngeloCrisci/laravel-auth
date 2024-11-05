@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\MyProject;
+use App\Models\Project;
 
 class ProjectSeeder extends Seeder
 {
@@ -36,7 +36,7 @@ class ProjectSeeder extends Seeder
         ];
 
         foreach ($projects as $project){
-            $newProject = new MyProject();
+            $newProject = new Project();
             $newProject->name = $project["name"];
             $newProject->date = $project["date"];
             $newProject->description = $project["description"];

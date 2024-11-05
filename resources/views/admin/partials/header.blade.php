@@ -1,5 +1,5 @@
 <header>
-    <h1>
-        Header
+    <h1 class="text-center">
+        My PortFolio
     </h1>
 </header>

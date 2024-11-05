@@ -24,7 +24,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::prefix("/admin")->name("admin.")->group(function(){
-    Route::get("/project" , [ProjectController::class , "index"])->name("projects.index");
+    Route::get("/projects" , [ProjectController::class , "index"])->name(".index");
 
 
 });
